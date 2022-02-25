@@ -1,0 +1,60 @@
+.profile-container{
+    width:964px;
+    margin:0px auto;
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: row wrap;  
+    gap:2.5em;  
+}
+
+.profile-img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.profile-img img{
+    width: 100%;
+}
+
+.profile-name{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 70%;
+    color:#191a1d;
+    letter-spacing: .0625rem;
+}
+
+.profile-information{
+    width: 80%;
+}
+
+.subrayado{
+    margin-top:2.33%;
+    max-width: 5%;
+    background: #4b6cc1;
+    border-radius: 1000px;
+    height: 10px;
+}
+
+.pages{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.pages a{
+    color:#5e5e5e;
+    font-size: 1.125rem;
+    margin-top: 3.64%;
+    margin-right: 4.85%;
+    text-decoration: none;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.pages a:hover{
+    color:#4b6cc1;
+}
