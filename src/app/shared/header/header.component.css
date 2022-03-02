@@ -1,5 +1,7 @@
+
+
 .profile-container{
-    width:964px;
+    width: 80%;
     margin:0px auto;
     margin-top: 5em;
     display: flex;
@@ -32,8 +34,8 @@
 
 .subrayado{
     margin-top:2.33%;
-    max-width: 5%;
-    background: #4b6cc1;
+    max-width: 40px;
+    background: #1B7CDE;
     border-radius: 1000px;
     height: 10px;
 }
@@ -41,6 +43,10 @@
 .pages{
     display: flex;
     flex-wrap: wrap;    
+}
+
+.active{
+    color:#1B7CDE !important;
 }
 
 .pages a{
@@ -56,5 +62,13 @@
 }
 
 .pages a:hover{
-    color:#4b6cc1;
+    color:#1B7CDE;
 }
+
+@media screen and (max-width:1200px) { 
+    .profile-container{
+        width: 100%;
+    }
+}
+
+

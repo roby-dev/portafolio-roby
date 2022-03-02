@@ -1,1 +1,45 @@
-<p>contact works!</p>
+<div class="work-info">    
+    <h2>Contáctame</h2>
+    <p>Si quieres hablar acerca de un proyecto o alguna duda, puedes hacerlo llenando el siguiente formulario.
+        Contestaré pronto.
+    </p>
+
+
+    
+    <div class="mt-large form">            
+        <form id="contact-form" class="form" action="https://sebkay.com/contact" method="post" data-recaptcha-form="contact">
+            <div class="form__row">
+                <div class="form__field">                  
+                    <input id="name" name="name" type="text" required placeholder="Nombre">
+                </div>
+
+                <div class="form__field">                   
+                    <input id="email" name="email" type="email" required placeholder="Correo electrónico">
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">                    
+                    <input id="subject" name="subject" type="text" required placeholder="Asunto">
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">                    
+                    <textarea id="message" name="message" required placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <button class="btn">
+                        Enviar mensaje
+                    </button>
+                </div>
+            </div>
+
+            <input type="hidden" name="_token" value="giNFapjvEoUOQQ00Bh6oX1VIOnwltti0t96Dgu4U">
+        </form>
+    </div>
+</div>
+

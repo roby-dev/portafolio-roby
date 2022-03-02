@@ -1,0 +1,29 @@
+<section class="section home">
+    <div class="info">
+        <h2>👋 Hola, soy Roby</h2>
+        <p>Soy desarrollador de software en Tacna, Perú. Actualmente cursando el último ciclo
+            de la carrera profesional de Ingeniería de Sistemas en la Universidad Privada de Tacna, 
+            <a href="http://www.upt.edu.pe/upt/web/index.php" target="_blank">UPT</a>.
+            En mi tiempo libre me gusta indagar sobre nuevas tecnologías para poder
+            integrarlas en mis futuros proyectos.
+        </p>
+        <br><br>
+        <p>También soy el creador de la empresa "<a href="https://www.facebook.com/Kazuro-Systems-108872151701822" target="_blank">Kazuro Systems</a>", encargada al desarrollo de software (aplicaciónes de escritorio, aplicaciones móviles, aplicaciones web, etc).
+         <small><a routerLink="/work">Más información</a></small></p>
+        <br><br>
+        <p>
+            Me pueden encontrar en 
+            <a href="https://github.com/roby-dev"  target="_blank">GitHub</a>, <a href="https://www.facebook.com/gerson.zuniga.25/"  target="_blank">Facebook</a>,   <a href="https://www.linkedin.com/in/robzunigas/"  target="_blank">Linkedin</a>.
+        </p>
+    </div>
+
+    <div class="articles">
+        <h2>Noticias recientes</h2>
+        <article *ngFor='let article of articleService.articles'>
+            <h3>{{article.title}}</h3>
+            <p class="category"><b>{{article.category}}</b> / {{article.date}}</p>
+            <p class="content">{{article.subInfo}}</p> 
+            <a href='{{article.url}}' target="_blank">Leer noticia →</a>
+        </article>
+    </div>   
+</section>

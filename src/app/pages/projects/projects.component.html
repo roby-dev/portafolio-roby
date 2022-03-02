@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<div class="work-info">    
+    <h2>Proyectos</h2>
+    <p>Algunos de los proyectos realizados</p>
+</div>
+
+
+<div class="work-content" *ngFor='let project of projectService.projects'>
+    <a target="_blank" class="work-img">
+        <img src="./assets/img/{{project.img}}">
+    </a>
+    <div class="work-img-content">
+        <h2>{{project.title}}</h2>
+        <p>
+           {{project.subInfo}}
+        </p>                
+    </div>
+</div>
